@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+</head>
+
+<body>
+    <strong>Поиск авто</strong>
+    <form action="https://fom.in.ua/echo" method="GET">
+        <ul>
+            <li>
+                <fieldset>
+                    <legend>Выберите тип кузова</legend>
+                    <label>
+                        <input type="checkbox" name="carBodyTypeStationWagon">
+                        Универсал
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="carBodyTypeSedan">
+                        Седан
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="carBodyTypeSuvCrossover">
+                        Внедорожник/Кроссовер
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="carBodyTypeCoupe">
+                        Купе
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="carBodyTypeHatchback">
+                        Хетчбек
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="carBodyTypeCabriolet">
+                        Кабриолет
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите марку</legend>
+                    <select name="carBrand">
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Opel">Opel</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="Skoda">Skoda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Daihatsu">Daihatsu</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Maybach">Maybach</option>
+                    </select>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите страну</legend>
+                    <select name="Country">
+                        <option value="France">Франция</option>
+                        <option value="USA">США</option>
+                        <option value="Germany">Германия</option>
+                        <option value="China">Китай</option>
+                        <option value="Ukraine">Украина</option>
+                        <option value="Malaysia">Малайзия</option>
+                        <option value="Italy">Италия</option>
+                        <option value="Korea">Корея</option>
+                    </select>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите стоимость в USD</legend>
+                    <input type="number" placeholder="min 100 USD" min="100" name="priceFrom">
+                    <input type="number" placeholder="max 1 million USD" max="1000000" name="priceTo">
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите год выпуска</legend>
+                    <select name="year">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                    </select>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите состояние</legend>
+                    <label>
+                        <input type="checkbox" name="conditionNew">
+                        Новое
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="conditionAfterAccident">
+                        После ДТП
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="conditionImportedFromTheUSA">
+                        Из США
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="conditionFirstOwner">
+                        Первый владелец
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="conditionTheCarIsNotClearedThroughCustoms">
+                        Не растаможена
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="conditionGarageStorage">
+                        Гаражное хранение
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите вид топлива</legend>
+                    <label>
+                        <input type="radio" name="Fuel"> Бензин
+                    </label>
+                    <label>
+                        <input type="radio" name="Fuel"> Газ
+                    </label>
+                    <label>
+                        <input type="radio" name="Fuel"> Газ пропан-бутан/Бензин
+                    </label>
+                    <label>
+                        <input type="radio" name="Fuel"> Газ метан/Бензин
+                    </label>
+                    <label>
+                        <input type="radio" name="Fuel"> Электро
+                    </label>
+                    <label>
+                        <input type="radio" name="Fuel"> ДТ
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите тип коробки передач</legend>
+                    <label>
+                        <input type="radio" name="Transmission"> Ручная/Механика
+                    </label>
+                    <label>
+                        <input type="radio" name="Transmission"> Автомат
+                    </label>
+                    <label>
+                        <input type="radio" name="Transmission"> Типтроник
+                    </label>
+                    <label>
+                        <input type="radio" name="Transmission"> Робот
+                    </label>
+                    <label>
+                        <input type="radio" name="Transmission"> Вариатор
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите цвет кузова</legend>
+                    <label>
+                        Цвет:
+                        <input type="color" name="color">
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Выберите дополнительные опции</legend>
+                    Тип фар
+                    <select name="AddOptionsHeadlights">
+                        <option value="Xenoni">Xenon</option>
+                        <option value="Halogen">Halogen</option>
+                        <option value="Laser">Laser</option>
+                    </select>
+                    <br>
+                    Материал обшивки салона
+                    <select name="AddOptionsSalonMaterials">
+                        <option value="Leather">Leather</option>
+                        <option value="Velours">Velours</option>
+                        <option value="Fabric">Fabric</option>
+                    </select>
+                    <br>
+                    Подогрев сидений
+                    <select name="AddOptionsHeatedSeatFunction">
+                        <option value="front seats">Передние сидения</option>
+                        <option value="front and rear seats">Передние и задние сидения</option>
+                    </select>
+                    <br>
+                    Усилитель руля
+                    <select name="AddOptionsPowerSteering">
+                        <option value="hydro ">Гидро</option>
+                        <option value="electric">Электро</option>
+                    </select>
+                    <br>
+                    Электростеклоподъемники
+                    <select name="AddOptionsElectricWindowLifters">
+                        <option value="front">Передние</option>
+                        <option value="front and rear">Передние и задние</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                    </select>
+                </fieldset>
+            </li>
+        </ul>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="../pages/authorization.html">Авторизация</a>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework2</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        } browser style reset */
+        table,
+        td,
+        th {
+            border: 1px solid #000;
+        }
+
+        td {
+            /* padding: 20px; пока не знаю как применять паддинг только к одной таблице */
+            text-align: center;
+        }
+
+        /* table {
+            border-collapse: collapse; 
+        } */
+
+        table img {
+            vertical-align: middle;
+            /*Вертикальное выравнивание*/
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <strong>Homework2</strong>
+        </div>
+    </header>
+    <main>
+        <p>Task 1</p>
+        <table>
+            <!-- table head -->
+            <thead>
+                <tr>
+                    <th colspan="4">MY FIRST TABLE</th>
+                </tr>
+            </thead>
+            <!-- table body -->
+            <tbody>
+                <tr>
+                    <td>First cell</td>
+                    <td>Second cell</td>
+                    <td colspan="2" rowspan="3">6 cells merged together</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2 cells merged into one</td>
+                </tr>
+                <tr>
+                    <td>1st cell<br>3rd row</td>
+                    <td>2nd cell<br>3rd row</td>
+                </tr>
+                <tr class="hidden">
+                    <td>Fake cell</td>
+                    <td>Fake cell</td>
+                    <td>Fake cell</td>
+                    <td>Fake cell</td>
+                </tr>
+            </tbody>
+            <!-- table foot -->
+            <tfoot>
+                <tr>
+                    <td colspan="4">Do you like tables?</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <details>
+            <summary>Натиснiть будь-ласка для додаткової iнформацiї</summary>
+            <p><sup>1</sup>/<sub>2</sub> шляху пройдена</p>
+            <meter min="0.01" low="0.2" value="0.5" high="0.9" max="1"></meter>
+            <hr>
+        </details>
+        <p>Task 2</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="/homework2/public/img/ulybaka_01.jpg" alt="улибака 1">
+                    </td>
+                    <td rowspan="3">
+                        <img src="/homework2/public/img/ulybaka_02.jpg" alt="улибака 2">
+                    </td>
+                    <td colspan="1">
+                        <img src="/homework2/public/img/ulybaka_03.jpg" alt="улибака 3">
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="/homework2/public/img/ulybaka_04.jpg" alt="улибака 4">
+                    </td>
+                    <td>
+                        <img src="/homework2/public/img/ulybaka_05.jpg" alt="улибака 5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/homework2/public/img/ulybaka_06.jpg" alt="улибака 6">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <img src="/homework2/public/img/ulybaka_07.jpg" alt="улибака 7">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div>
+            <!-- <a href="https://www.youtube.com/watch?v=qvz28xRPT0w&ab_channel=-ANTRA-" target="_blank">press</a> Чтобы закрепить предыдущий урок -->
+        </div>
+    </footer>
+</body>
+
+</html>
